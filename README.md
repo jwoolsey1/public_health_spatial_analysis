@@ -4,7 +4,7 @@ An R pipeline utilizing Kernel Density Estimation (KDE) to map and analyze regio
 # Public Health Geospatial Hotspot Analysis in R
 
 ## Overview
-This project provides a reproducible R programming pipeline to identify and map spatial clusters of critical health events (such as overdoses or emergency responses). By transforming raw coordinates into actionable geographic risk tiers, this script allows organizations to deploy resources more effectively.
+This project provides a reproducible R programming pipeline to identify and map spatial clusters of critical health events. By transforming raw coordinates into actionable geographic risk tiers, this script allows organizations to deploy resources more effectively.
 
 ## Key Technical Features
 * **Spatial Data Pipeline:** Integrates `sf` (Simple Features) data structures with traditional `tidyverse` data manipulation workflows.
