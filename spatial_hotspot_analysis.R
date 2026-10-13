@@ -12,11 +12,11 @@ pacman::p_load(tidyverse, sf, sfhotspot, tigris, tidygeocoder, openxlsx, janitor
 # Fetch 2020 Census Tracts for Your County, CA (FIPS code 105)
 yourcounty_tracts_2020 <- tigris::tracts(year = "2020", state = "CA", county = "105", progress_bar = FALSE)
 
-# Ingest Overdose Death Data (with Portfolio Safe Fallback)
-death_data_path <- "Your county overdose deaths.rds"
+# Ingest Your County Event Data (with Portfolio Safe Fallback)
+death_data_path <- "Your county event file goes here.rds"
 
 if (file.exists(death_data_path)) {
-  yourcounty_od_map <- readRDS(death_data_path) %>% 
+  yourcounty_od_map <- readRDS(event_data_path) %>% 
     select(lat = RESIDENCE_LATITUDE_193, lon = RESIDENCE_LONGITUDE_194)
 } else {
   set.seed(42) # Ensure reproducible fake coordinates within Your County limits
